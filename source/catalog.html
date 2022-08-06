@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона-каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img src="../source/img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
+      <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -45,10 +46,9 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Галерея</h1>
-    <div class="gallery-welcome-section">
-      <div class="gallery-welcome-section__wrapper">
-        <img class="gallery-welcome-section__image" src="../source/img/sedona-label.svg" width="229" height="39"
-          alt="Седона.">
+    <div class="welcome-section-short">
+      <div class="welcome-section-short__wrapper">
+        <img class="welcome-section-short__image" src="img/sedona-label.svg" width="229" height="39" alt="Седона.">
       </div>
     </div>
     <section class="gallery">
@@ -60,9 +60,11 @@
         </header>
         <ul class="gallery__list">
           <li class="gallery__gallery-item gallery-item">
-            <img class="gallery-item__user-photo" src="../source/img/user-photo1.jpg" width="280" height="280"
-              alt="Вид на загородное шоссе.">
-            <h3 class="gallery-item__title">Неродные просторы</h3>
+            <a class="gallery-item__link-photo" href="#">
+              <img class="gallery-item__user-photo" src="img/user-photo1.jpg" width="280" height="280"
+                alt="Вид на загородное шоссе.">
+              <h3 class="gallery-item__title">Неродные просторы</h3>
+            </a>
             <dl class="gallery-item__list">
               <dt class="gallery-item__name">Автор фото:</dt>
               <dd class="gallery-item__value">Борис</dd>
@@ -71,9 +73,11 @@
             </dl>
           </li>
           <li class="gallery__gallery-item gallery-item">
-            <img class="gallery-item__user-photo" src="../source/img/user-photo2.jpg" width="280" height="280"
-              alt="Иллюстрация местной растительности.">
-            <h3 class="gallery-item__title">Местная растительность</h3>
+            <a class="gallery-item__link-photo" href="#">
+              <img class="gallery-item__user-photo" src="img/user-photo2.jpg" width="280" height="280"
+                alt="Иллюстрация местной растительности.">
+              <h3 class="gallery-item__title">Местная растительность</h3>
+            </a>
             <dl class="gallery-item__list">
               <dt class="gallery-item__name">Автор фото:</dt>
               <dd class="gallery-item__value">Сергей</dd>
@@ -82,9 +86,11 @@
             </dl>
           </li>
           <li class="gallery__gallery-item gallery-item">
-            <img class="gallery-item__user-photo" src="../source/img/user-photo3.jpg" width="280" height="280"
-              alt="Вид на горный серпантин.">
-            <h3 class="gallery-item__title">Дорога на север</h3>
+            <a class="gallery-item__link-photo" href="#">
+              <img class="gallery-item__user-photo" src="img/user-photo3.jpg" width="280" height="280"
+                alt="Вид на горный серпантин.">
+              <h3 class="gallery-item__title">Дорога на север</h3>
+            </a>
             <dl class="gallery-item__list">
               <dt class="gallery-item__name">Автор фото:</dt>
               <dd class="gallery-item__value">Петр</dd>
@@ -93,9 +99,11 @@
             </dl>
           </li>
           <li class="gallery__gallery-item gallery-item">
-            <img class="gallery-item__user-photo" src="../source/img/user-photo4.jpg" width="280" height="280"
-              alt="Вид на Мост Дьявола.">
-            <h3 class="gallery-item__title">Мост дьявола</h3>
+            <a class="gallery-item__link-photo" href="#">
+              <img class="gallery-item__user-photo" src="img/user-photo4.jpg" width="280" height="280"
+                alt="Вид на Мост Дьявола.">
+              <h3 class="gallery-item__title">Мост дьявола</h3>
+            </a>
             <dl class="gallery-item__list">
               <dt class="gallery-item__name">Автор фото:</dt>
               <dd class="gallery-item__value">Антон</dd>
@@ -115,7 +123,7 @@
             подорожали в очередной раз!</p>
         </header>
         <a class="video-presentation__link video-preview" href="#">
-          <img class="video-preview__preview-image" src="../source/img/video-preview.jpg" width="280" height="177"
+          <img class="video-preview__preview-image" src="img/video-preview.jpg" width="280" height="177"
             alt="Превью видеопрезентации.">
           <div class="video-preview__play-icon">
             <svg width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
