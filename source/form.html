@@ -54,13 +54,13 @@
     <section class="reviews-form">
       <div class="reviews-form__wrapper">
         <header class="reviews-form__header">
-          <h2 class="reviews-form__title">Оставьте свой отзыв</h2>
+          <h2 class="reviews-form__title heading-form">Оставьте свой отзыв</h2>
           <p class="reviews-form__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
             вами достопримечательностях</p>
         </header>
         <form class="reviews-form__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__user-details-set user-details-set">
-            <legend class="user-details-set__legend">Представьтесь:</legend>
+            <legend class="user-details-set__legend heading-form">Представьтесь:</legend>
             <label class="user-details-set__label">
               Имя*:
               <input class="user-details-set__field" type="text" name="name" value="Пётр" required>
@@ -75,7 +75,7 @@
             </label>
           </fieldset>
           <fieldset class="form__user-contacts-set user-contacts-set">
-            <legend class="user-contacts-set__legend">Контактная информация:</legend>
+            <legend class="user-contacts-set__legend heading-form">Контактная информация:</legend>
             <label class="user-contacts-set__label">
               Контактный телефон*:
               <input class="user-contacts-set__field" type="tel" name="phone-number" placeholder="Введите телефон"
@@ -89,7 +89,7 @@
             <span class="user-contacts-set__field-icon user-contacts-set__field-icon--email"></span>
           </fieldset>
           <fieldset class="form__user-impressions user-impressions">
-            <legend class="user-impressions__legend">Ваше общее впечатление:</legend>
+            <legend class="user-impressions__legend heading-form">Ваше общее впечатление:</legend>
             <ul class="user-impressions__list">
               <li class="user-impressions__item">
                 <label class="user-impressions__label">
@@ -118,7 +118,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__visited visited">
-            <legend class="visited__legend">Посещенные достопримечательности:</legend>
+            <legend class="visited__legend heading-form">Посещенные достопримечательности:</legend>
             <ul class="visited__list">
               <li class="visited__item">
                 <label class="visited__label">
@@ -151,16 +151,18 @@
             </ul>
           </fieldset>
           <fieldset class="form__review-field review-field">
-            <legend class="review-field__legend">Опишите свои эмоции:</legend>
+            <legend class="review-field__legend heading-form">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="review-field">Отзыв</label>
             <textarea class="review-field__textarea" name="review-field" id="review-field">
               Опишите подробно все свои восторги
             </textarea>
           </fieldset>
+          <div class="form__submit-review-wrapper">
           <button class="form__submit-review-button button" type="submit">
             Отправить отзыв
           </button>
           <small class="form__legend">* — обязательные поля</small>
+        </div>
         </form>
       </div>
     </section>
