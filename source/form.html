@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона-форма для отзыва</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img src="../source/img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
+      <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -45,28 +46,27 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Форма для отзыва</h1>
-    <div class="reviews-welcome-section">
-      <div class="reviews-welcome-section__wrapper">
-        <img class="reviews-welcome-section__image" src="../source/img/sedona-label.svg" width="229" height="39"
-          alt="Седона.">
+    <div class="welcome-section-short">
+      <div class="welcome-section-short__wrapper">
+        <img class="welcome-section-short__image" src="img/sedona-label.svg" width="229" height="39" alt="Седона.">
       </div>
     </div>
     <section class="reviews-form">
       <div class="reviews-form__wrapper">
         <header class="reviews-form__header">
-          <h2 class="reviews-form__title">Оставьте свой отзыв</h2>
+          <h2 class="reviews-form__title heading-form">Оставьте свой отзыв</h2>
           <p class="reviews-form__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
             вами достопримечательностях</p>
         </header>
         <form class="reviews-form__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__user-details-set user-details-set">
-            <legend class="user-details-set__legend">Представьтесь:</legend>
+            <legend class="user-details-set__legend heading-form">Представьтесь:</legend>
             <label class="user-details-set__label">
               Имя*:
               <input class="user-details-set__field" type="text" name="name" value="Пётр" required>
             </label>
             <label class="user-details-set__label">
-             Фамилия*:
+              Фамилия*:
               <input class="user-details-set__field" type="text" name="surname" value="Пустота" required>
             </label>
             <label class="user-details-set__label">
@@ -75,7 +75,7 @@
             </label>
           </fieldset>
           <fieldset class="form__user-contacts-set user-contacts-set">
-            <legend class="user-contacts-set__legend">Контактная информация:</legend>
+            <legend class="user-contacts-set__legend heading-form">Контактная информация:</legend>
             <label class="user-contacts-set__label">
               Контактный телефон*:
               <input class="user-contacts-set__field" type="tel" name="phone-number" placeholder="Введите телефон"
@@ -89,7 +89,7 @@
             <span class="user-contacts-set__field-icon user-contacts-set__field-icon--email"></span>
           </fieldset>
           <fieldset class="form__user-impressions user-impressions">
-            <legend class="user-impressions__legend">Ваше общее впечатление:</legend>
+            <legend class="user-impressions__legend heading-form">Ваше общее впечатление:</legend>
             <ul class="user-impressions__list">
               <li class="user-impressions__item">
                 <label class="user-impressions__label">
@@ -99,7 +99,7 @@
                   Скорее положительное
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="user-impressions__item">
                 <label class="user-impressions__label">
                   <input class="visually-hidden user-impressions__input input" type="radio" name="user-impression"
                     value="negative">
@@ -107,7 +107,7 @@
                   Скорее отрицательное
                 </label>
               </li>
-              <li class="catalog-filter-item">
+              <li class="user-impressions__item">
                 <label class="user-impressions__label">
                   <input class="visually-hidden user-impressions__input input" type="radio" name="user-impression"
                     value="difficult">
@@ -118,7 +118,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__visited visited">
-            <legend class="visited__legend">Посещенные достопримечательности:</legend>
+            <legend class="visited__legend heading-form">Посещенные достопримечательности:</legend>
             <ul class="visited__list">
               <li class="visited__item">
                 <label class="visited__label">
@@ -151,16 +151,18 @@
             </ul>
           </fieldset>
           <fieldset class="form__review-field review-field">
-            <legend class="review-field__legend">Опишите свои эмоции:</legend>
+            <legend class="review-field__legend heading-form">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="review-field">Отзыв</label>
             <textarea class="review-field__textarea" name="review-field" id="review-field">
               Опишите подробно все свои восторги
             </textarea>
           </fieldset>
-          <button class="form__submit-review-button button" type="submit">
-            Отправить отзыв
-          </button>
-          <small class="form__legend">* — обязательные поля</small>
+          <div class="form__submit-review-wrapper">
+            <button class="form__submit-review-button button" type="submit">
+              Отправить отзыв
+            </button>
+            <small class="form__legend">* — обязательные поля</small>
+          </div>
         </form>
       </div>
     </section>
@@ -184,31 +186,39 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
-              fill="#000" /></svg>
-        </a>
+        <div class="copyright__wrapper">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+                fill="#000" /></svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
-  <div class="modal-container modal-container--failure">
-    <div class="modal-container__wrapper">
-      <p class="modal-container__notice">Что-то пошло не так!</p>
-      <p class="modal-container__notice-explanation">Проверьте поля, выделенные красным, скорее всего вы забыли их
+  <div class="modal-container modal-container-failure">
+    <div class="modal-container-failure__wrapper">
+      <p class="modal-container-failure__notice">Что-то пошло не так!</p>
+      <p class="modal-container-failure__notice-explanation">Проверьте поля, выделенные красным, скорее всего вы забыли
+        их
         заполнить</p>
-      <button class="modal-container__close-button button">Oк</button>
+      <button class="modal-container-failure__close-button button">Oк</button>
     </div>
   </div>
-  <div class="modal-container modal-container--success">
-    <div class="modal-container__wrapper">
-      <p class="modal-container__notice">Ваш отзыв отправлен!</p>
-      <p class="modal-container__notice-explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
-        время мы опубликуем его на сайте.</p>
-      <button class="modal-container__close-button button">Закрыть окно</button>
+  <div class="modal-container modal-container-success">
+    <div class="modal-container-success__wrapper">
+      <div class="modal-container-success__notice-area">
+        <p class="modal-container-success__notice">Ваш отзыв отправлен!</p>
+        <p class="modal-container-success__notice-explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В
+          ближайшее
+          время мы опубликуем его на сайте.</p>
+      </div>
+      <p class="modal-container-success__close-button-area">
+        <button class="modal-container-success__close-button button">Закрыть окно</button>
+      </p>
     </div>
   </div>
 </body>
