@@ -8,6 +8,24 @@
   color: #000000;
 }
 
+.gallery-item__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.gallery-item__likes-container {
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+}
+
 .gallery-item__name {
   text-transform: none;
   color: @black-basic;
