@@ -60,35 +60,38 @@
             вами достопримечательностях</p>
         </header>
         <form class="reviews-form__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__user-details-set user-details-set">
-            <legend class="user-details-set__legend heading-form">Представьтесь:</legend>
-            <label class="user-details-set__label">
-              Имя*:
-              <input class="user-details-set__field" type="text" name="name" value="Пётр" required>
-            </label>
-            <label class="user-details-set__label">
-              Фамилия*:
-              <input class="user-details-set__field" type="text" name="surname" value="Пустота" required>
-            </label>
-            <label class="user-details-set__label">
-              Отчество:
-              <input class="user-details-set__field" type="text" name="middle-name" value="Викторович">
-            </label>
-          </fieldset>
-          <fieldset class="form__user-contacts-set user-contacts-set">
-            <legend class="user-contacts-set__legend heading-form">Контактная информация:</legend>
-            <label class="user-contacts-set__label">
-              Контактный телефон*:
+          <div class="reviews-form__user-info-wrapper">
+            <fieldset class="form__user-details-set user-details-set">
+              <legend class="user-details-set__legend heading-form">Представьтесь:</legend>
+              <label class="user-details-set__label" for="name">
+                Имя*:
+              </label>
+              <input class="user-details-set__field" type="text" name="name" value="Пётр" id="name" required>
+              <label class="user-details-set__label" for="surname">
+                Фамилия*:
+              </label>
+              <input class="user-details-set__field" type="text" name="surname" value="Пустота" id="surname" required>
+              <label class="user-details-set__label" for="middle-name">
+                Отчество:
+              </label>
+              <input class="user-details-set__field" type="text" name="middle-name" value="Викторович" id="middle-name">
+            </fieldset>
+            <fieldset class="form__user-contacts-set user-contacts-set">
+              <legend class="user-contacts-set__legend heading-form">Контактная информация:</legend>
+              <label class="user-contacts-set__label" for="phone-number">
+                Контактный телефон*:
+              </label>
               <input class="user-contacts-set__field" type="tel" name="phone-number" placeholder="Введите телефон"
+                id="phone-number" required>
+              <span class="user-contacts-set__field-icon user-contacts-set__field-icon--phone"></span>
+              <label class="user-contacts-set__label" for="email">
+                Электронная почта*:
+              </label>
+              <input class="user-contacts-set__field" type="email" name="email" placeholder="Введите e-mail" id="email"
                 required>
-            </label>
-            <span class="user-contacts-set__field-icon user-contacts-set__field-icon--phone"></span>
-            <label class="user-contacts-set__label">
-              Электронная почта*:
-              <input class="user-contacts-set__field" type="email" name="email" placeholder="Введите e-mail" required>
-            </label>
-            <span class="user-contacts-set__field-icon user-contacts-set__field-icon--email"></span>
-          </fieldset>
+              <span class="user-contacts-set__field-icon user-contacts-set__field-icon--email"></span>
+            </fieldset>
+          </div>
           <fieldset class="form__user-impressions user-impressions">
             <legend class="user-impressions__legend heading-form">Ваше общее впечатление:</legend>
             <ul class="user-impressions__list">
