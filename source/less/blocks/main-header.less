@@ -1,14 +1,22 @@
 .main-header {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -40px;
 }
 
 .main-header__logo {
   height: 96px;
-  display: block;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     order: 2;
   }
+}
+
+.main-header__logo img {
+  display: block;
+  width: 185px;
+  height: 96px;
+  z-index: 3;
 }
