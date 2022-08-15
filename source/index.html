@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,12 +13,12 @@
     <a class="main-header__logo">
       <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
+    <button class="main-nav__toggle main-nav__toggle--cross" type="button">
+      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" /></svg>
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--cross" type="button">
-        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" /></svg>
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
@@ -90,8 +91,8 @@
               <p class="advantages-item__description advantages-item__advantage-order">Да, по нему можно пройти! Если вы
                 осмелитесь, конечно</p>
             </div>
-            <img class="advantages-item__illustration" src="img/devils-bridge-image.jpg" width="320" height="260"
-              alt="Вид на Мост Дьявола.">
+            <img class="advantages-item__illustration advantages-item__illustration--reverse"
+              src="img/devils-bridge-image.jpg" width="320" height="260" alt="Вид на Мост Дьявола.">
           </li>
           <li class="advantages__advantages-item advantages-item">
             <div class="advantages-item__wrapper">
