@@ -4,6 +4,14 @@
 
 .search__wrapper {
   padding: 38px 20px 49px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 155px 58px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 61px 371px 66px 371px;
+  }
 }
 
 .search__slogan {
@@ -16,6 +24,22 @@
 .search__intro {
   margin: 0 0 32px 0;
   color: @black-basic;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 46px 0;
+  }
+}
+
+.search___tablet-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .search__button {
