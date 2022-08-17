@@ -1,0 +1,30 @@
+.map-section {
+  position: relative;
+}
+
+.map-section__map {
+  display: block;
+}
+
+.map-section__marker {
+  position: absolute;
+  left: 46%;
+  bottom: 47%;
+  width: 27px;
+  height: 27px;
+  background-color: @white;
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.map-section__marker::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 17px;
+  height: 17px;
+  background-color: @blue-basic;
+  z-index: 3;
+  border-radius: 9px;
+}
