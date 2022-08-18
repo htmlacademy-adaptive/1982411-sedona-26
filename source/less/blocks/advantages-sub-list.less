@@ -5,10 +5,14 @@
     grid-column: 1 / -1;
     column-gap: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 110px;
+  }
 }
 
 .advantages-sub-list__sub-list-item {
-  padding: 23px 0  0 47px;
+  padding: 23px 0 0 47px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
@@ -59,6 +63,18 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages-sub-list__desktop-br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
     display: block;
   }
 }

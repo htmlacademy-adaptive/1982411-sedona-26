@@ -11,6 +11,10 @@
   @media (min-width: @tablet-width) {
     padding: 41px 32px 43px 32px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 47px 58px 56px 58px;
+  }
 }
 
 .advantages-item__title {
@@ -47,6 +51,14 @@
   }
 }
 
+.advantages-item__desktop-br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .advantages-item__illustration {
   display: block;
 
@@ -67,5 +79,9 @@
 
   @media (min-width: @tablet-width) {
     padding: 53px 31px 59px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 63px 78px 80px 58px;
   }
 }

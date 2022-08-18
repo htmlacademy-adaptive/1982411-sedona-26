@@ -15,11 +15,11 @@
     inset 0 0 2px rgba(255, 255, 255, 0.2);
 
   &:hover {
-    background-color: #669ec0;
+    background-color: @blue-hover;
   }
 
   &:active {
-    background-color: #5496bd;
+    background-color: @blue-active;
   }
 
   @media (min-width: @tablet-width) {
@@ -29,12 +29,9 @@
     background-color: @white;
     box-shadow: none;
 
-    &:hover {
-      background-color: #e5e5e5;
-    }
-
+    &:hover,
     &:active {
-      background-color: #d5d5d5;
+      background-color: @white;
     }
   }
 
@@ -61,13 +58,21 @@
   color: @white;
 
   &:active {
-    color: fade(#ffffff, 30%);
+    color: @white-active;
   }
 
   @media (min-width: @tablet-width) {
     padding-top: 18px;
     padding-bottom: 17px;
     color: #000000;
+
+    &:hover {
+      color: @blue-basic;
+    }
+
+    &:active {
+      color: fade(#000000, 30%);
+    }
   }
 }
 
