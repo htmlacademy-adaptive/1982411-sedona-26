@@ -1,18 +1,26 @@
 .user-details-set {
   margin: 0;
-  padding: 0;
-  padding-top: 24px;
-  padding-bottom: 39px;
+  padding: 24px 0 39px 0;
   display: flex;
   flex-direction: column;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 24px 44px 39px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 24px 64px 39px 0;
+  }
 }
 
 .user-details-set__legend {
+  padding-top: 24px;
   text-align: center;
 }
 
 .user-details-set__label {
+  padding-left: 16px;
   color: @black-basic;
 }
 
@@ -26,4 +34,8 @@
   line-height: 26px;
   background-color: #f2f2f2;
   border: none;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }

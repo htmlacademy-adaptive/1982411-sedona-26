@@ -1,29 +1,69 @@
 .user-contacts-set {
   margin: 0;
-  padding: 0;
-  padding-top: 24px;
-  padding-bottom: 34px;
+  padding: 24px 0 34px 0;
   display: flex;
   flex-direction: column;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 24px 0 34px 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 24px 0 34px 64px;
+  }
 }
 
 .user-contacts-set__legend {
+  padding-top: 24px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -54px;
+  }
 }
 
 .user-contacts-set__label {
+  padding-left: 16px;
   color: @black-basic;
 }
 
+.user-contacts-set__input-wrapper {
+  display: grid;
+  grid-template-columns: auto 58px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
 .user-contacts-set__field {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-bottom: 16px;
+  padding: 16px 0 16px 16px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
   border: none;
+}
+
+.user-contacts-set__field-icon--phone,
+.user-contacts-set__field-icon--email {
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-contacts-set__field-icon--phone {
+  background-image: url("../../img/phone-icon.svg");
+}
+
+.user-contacts-set__field-icon--email {
+  background-image: url("../../img/email-icon.svg");
 }

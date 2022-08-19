@@ -6,6 +6,7 @@
 }
 
 .welcome-section-short__wrapper {
+  position: relative;
   margin: 0 auto;
   padding: 52px 46px 67px 45px;
   display: flex;
@@ -16,6 +17,27 @@
 
   @media (min-width: @desktop-width) {
     padding: 101px 371px 102px 369px;
+  }
+}
+
+.welcome-section-short__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 320px;
+  height: 57px;
+  background-image: url("../../img/welcome-divider.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background-image: url("../../img/welcome-divider-tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-image: url("../../img/welcome-divider-desktop.svg");
   }
 }
 
