@@ -47,8 +47,11 @@
     <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
     <div class="welcome-section">
       <div class="welcome-section__wrapper">
-        <img class="welcome-section__image" src="img/welcome-image.svg" width="282" height="214"
-          alt="Добро пожаловать в Седону, потому что Гранд Каньон - отстой!">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/welcome-image-tablet.svg" width="461" height="350">
+          <img class="welcome-section__image" src="img/welcome-image.svg" width="282" height="214"
+            alt="Добро пожаловать в Седону, потому что Гранд Каньон - отстой!">
+        </picture>
       </div>
     </div>
     <section class="advantages">
@@ -66,8 +69,16 @@
               <p class="advantages-item__description advantages-item__advantage-order">Седона не аттракцион для
                 туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages-item__illustration" src="img/city-view-image.jpg" width="320" height="260"
-              alt="Вид на городок.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/city-view-image-desktop.jpg 1x, img/city-view-image-desktop@2x.jpg 2x" width="800"
+                height="256">
+              <source media="(min-width: 768px)"
+                srcset="img/city-view-image-tablet.jpg 1x, img/city-view-image-tablet@2x.jpg 2x" width="512"
+                height="256">
+              <img class="advantages-item__illustration" src="img/city-view-image.jpg"
+                srcset="img/city-view-image@2x.jpg" width="320" height="260" alt="Вид на городок.">
+            </picture>
             <div class="advantages-item__advantages-sub-list advantages-sub-list">
               <div class="advantages-sub-list__sub-list-item advantages-sub-list__sub-list-item--housing">
                 <h3 class="advantages-sub-list__title heading">Жилье</h3>
@@ -95,8 +106,16 @@
                   class="advantages-item__desktop-br"> Если вы
                 осмелитесь, конечно</p>
             </div>
-            <img class="advantages-item__illustration advantages-item__illustration--reverse"
-              src="img/devils-bridge-image.jpg" width="320" height="260" alt="Вид на Мост Дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/devils-bridge-image-desktop.jpg 1x, img/devils-bridge-image-desktop@2x.jpg 2x" width="800"
+                height="256">
+              <source media="(min-width: 768px)"
+                srcset="img/devils-bridge-image-tablet.jpg 1x, img/devils-bridge-image-tablet@2x.jpg 2x" width="512"
+                height="256">
+              <img class="advantages-item__illustration"
+                src="img/devils-bridge-image.jpg" srcset="img/devils-bridge-image@2x.jpg" width="320" height="260" alt="Вид на Мост Дьявола.">
+            </picture>
           </li>
           <li class="advantages__advantages-item advantages-item advantages-item--divided">
             <div class="advantages-item__wrapper">
