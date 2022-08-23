@@ -1,0 +1,49 @@
+.form__submit-review-wrapper {
+  padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.form__fieldset {
+  position: relative;
+}
+
+.form__fieldset::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.form__submit-review-button {
+  padding: 19px 34px 14px 32px;
+  box-sizing: border-box;
+}
+
+.form__legend {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  line-height: 21px;
+  color: @black-basic;
+  opacity: 60%;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
+}

@@ -17,6 +17,14 @@
   padding-top: 36px;
   padding-bottom: 28px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 106px 78px 106px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 262px 43px 262px;
+  }
 }
 
 .reviews-form__title {
@@ -33,10 +41,5 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 69px;
-  }
-
-  @media (min-width: @desktop-width) {
-    column-gap: 127px;
   }
 }

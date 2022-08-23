@@ -1,29 +1,21 @@
-.welcome-section-short {
+.welcome-section {
   background-image: url("../img/welcome-background.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-color: @background;
 }
 
-.welcome-section-short__wrapper {
+.welcome-section__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 52px 46px 67px 45px;
+  padding: 90px 19px 85px 19px;
   display: flex;
-
-  @media (min-width: @tablet-width) {
-    padding: 95px 154px 117px 156px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 101px 371px 102px 369px;
-  }
 }
 
-.welcome-section-short__wrapper::after {
+.welcome-section__wrapper::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
   width: 320px;
   height: 57px;
@@ -41,7 +33,7 @@
   }
 }
 
-.welcome-section-short__image {
+.welcome-section__image {
   margin: 0 auto;
   display: block;
 }

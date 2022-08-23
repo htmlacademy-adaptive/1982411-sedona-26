@@ -1,14 +1,41 @@
 .main-header {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-header__logo {
   height: 96px;
-  display: block;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    position: relative;
+    top: -56px;
     order: 2;
+    z-index: 2;
   }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 507px;
+    order: 2;
+    z-index: 2;
+  }
+}
+
+.main-header__logo img {
+  display: block;
+  width: 185px;
+  height: 96px;
+  z-index: 3;
 }

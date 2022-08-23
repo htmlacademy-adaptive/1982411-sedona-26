@@ -1,10 +1,8 @@
 .site-list {
-  position: relative;
+  list-style-type: none;
 }
 
 .site-list__item {
-  // display: none;
-  // потом придумать, как сделать меню
   width: 320px;
   font-size: 18px;
   line-height: 26px;
@@ -13,12 +11,73 @@
   text-align: center;
   color: @white;
   background-color: @blue-basic;
+  box-shadow: 0 0 2px rgba(1, 1, 1, 0.2),
+    inset 0 0 2px rgba(255, 255, 255, 0.2);
 
-  a {
-    display: block;
-    padding-top: 17px;
-    padding-bottom: 12px;
-    text-decoration: none;
-    color: @white;
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-active;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: @white;
+    box-shadow: none;
+
+    &:hover,
+    &:active {
+      background-color: @white;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+  }
+}
+
+.site-list__item:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 240px;
+  }
+}
+
+.site-list__item a {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  color: @white;
+
+  &:active {
+    color: @white-active;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    color: #000000;
+
+    &:hover {
+      color: @blue-basic;
+    }
+
+    &:active {
+      color: fade(#000000, 30%);
+    }
+  }
+}
+
+.site-list__item--current a {
+  @media (min-width: @tablet-width) {
+    color: #766357;
   }
 }
