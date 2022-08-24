@@ -4,17 +4,36 @@
 
 .map-section__map {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .map-section__marker {
   position: absolute;
   left: 46%;
-  bottom: 47%;
+  bottom: 46%;
   width: 27px;
   height: 27px;
   background-color: @white;
   z-index: 1;
   border-radius: 15px;
+
+  @media (min-width: @tablet-width) {
+    left: 370px;
+    bottom: 46%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 586px;
+    bottom: 46%;
+  }
 }
 
 .map-section__marker::after {
