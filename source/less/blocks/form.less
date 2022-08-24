@@ -14,19 +14,19 @@
 
 .form__fieldset {
   position: relative;
-}
 
-.form__fieldset::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  left: -20px;
-  width: 320px;
-  height: 1px;
-  background-color: #e5e5e5;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
 
-  @media (min-width: @tablet-width) {
-    display: none;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 

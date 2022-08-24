@@ -13,17 +13,17 @@
   @media (min-width: @desktop-width) {
     padding: 24px 64px 39px 0;
   }
-}
 
-.user-details-set::after {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    top: -26px;
-    right: 0;
-    width: 1px;
-    height: 338px;
-    background-color: #dbdbdb;
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: -26px;
+      right: 0;
+      width: 1px;
+      height: 338px;
+      background-color: #dbdbdb;
+    }
   }
 }
 
@@ -50,5 +50,20 @@
 
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus,
+  &:active {
+    background-color: @white;
+    box-shadow: inset 4px 4px #e5e5e5,
+      inset -4px -4px #e5e5e5;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
   }
 }

@@ -24,6 +24,7 @@
 
   @media (min-width: @tablet-width) {
     width: 153px;
+    flex-basis: 153px;
     font-size: 14px;
     line-height: 21px;
     background-color: @white;
@@ -37,16 +38,13 @@
 
   @media (min-width: @desktop-width) {
     width: 240px;
+    flex-basis: 240px;
   }
 }
 
 .site-list__item:nth-child(2) {
   @media (min-width: @tablet-width) {
     margin-right: auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 240px;
   }
 }
 
@@ -78,6 +76,11 @@
 
 .site-list__item--current a {
   @media (min-width: @tablet-width) {
+    color: #766357;
+  }
+
+  &:hover,
+  &:active {
     color: #766357;
   }
 }
