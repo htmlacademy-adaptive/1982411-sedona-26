@@ -31,6 +31,26 @@
 
 .gallery-item__user-photo {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.gallery-item__user-photo--main {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .gallery-item__title {

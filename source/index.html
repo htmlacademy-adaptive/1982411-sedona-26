@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -48,7 +52,7 @@
     <div class="welcome-section">
       <div class="welcome-section__wrapper">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/welcome-image-tablet.svg" width="461" height="350">
+          <source media="(min-width: 768px)" srcset="img/welcome-image-tablet.svg">
           <img class="welcome-section__image" src="img/welcome-image.svg" width="282" height="214"
             alt="Добро пожаловать в Седону, потому что Гранд Каньон - отстой!">
         </picture>
@@ -71,11 +75,9 @@
             </div>
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/city-view-image-desktop.jpg 1x, img/city-view-image-desktop@2x.jpg 2x" width="800"
-                height="256">
+                srcset="img/city-view-image-desktop.jpg 1x, img/city-view-image-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                srcset="img/city-view-image-tablet.jpg 1x, img/city-view-image-tablet@2x.jpg 2x" width="512"
-                height="256">
+                srcset="img/city-view-image-tablet.jpg 1x, img/city-view-image-tablet@2x.jpg 2x">
               <img class="advantages-item__illustration" src="img/city-view-image.jpg"
                 srcset="img/city-view-image@2x.jpg" width="320" height="260" alt="Вид на городок.">
             </picture>
@@ -99,7 +101,7 @@
             </div>
           </li>
           <li class="advantages__advantages-item advantages-item advantages-item--blue">
-            <div class="advantages-item__wrapper">
+            <div class="advantages-item__wrapper advantages-item__wrapper--reverse">
               <h3 class="advantages-item__title heading heading--white">Там есть <br
                   class="advantages-item__desktop-br"> Мост Дьявола</h3>
               <p class="advantages-item__description advantages-item__advantage-order">Да, по нему можно пройти! <br
@@ -113,8 +115,8 @@
               <source media="(min-width: 768px)"
                 srcset="img/devils-bridge-image-tablet.jpg 1x, img/devils-bridge-image-tablet@2x.jpg 2x" width="512"
                 height="256">
-              <img class="advantages-item__illustration"
-                src="img/devils-bridge-image.jpg" srcset="img/devils-bridge-image@2x.jpg" width="320" height="260" alt="Вид на Мост Дьявола.">
+              <img class="advantages-item__illustration" src="img/devils-bridge-image.jpg"
+                srcset="img/devils-bridge-image@2x.jpg" width="320" height="260" alt="Вид на Мост Дьявола.">
             </picture>
           </li>
           <li class="advantages__advantages-item advantages-item advantages-item--divided">
@@ -160,7 +162,12 @@
       </div>
     </section>
     <aside class="map-section">
-      <img class="map-section__map" src="img/map-mobile.jpg" alt="Седона на карте." width="320px" height="350px">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+        <img class="map-section__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg" alt="Седона на карте."
+          width="320px" height="350px">
+      </picture>
       <div class="map-section__marker">
       </div>
     </aside>

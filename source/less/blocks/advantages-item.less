@@ -38,7 +38,7 @@
 
 .advantages-item__wrapper--reverse {
   @media (min-width: @tablet-width) {
-    order: 1;
+    order: 2;
   }
 }
 
@@ -86,6 +86,15 @@
 
 .advantages-item__illustration {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .advantages-item__advantages-sub-list {

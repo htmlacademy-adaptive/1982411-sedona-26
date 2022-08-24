@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона-каталог</title>
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -63,8 +67,14 @@
         <ul class="gallery__list">
           <li class="gallery__gallery-item gallery__gallery-item--main gallery-item">
             <a class="gallery-item__link-photo" href="#">
-              <img class="gallery-item__user-photo" src="img/user-photo1.jpg" width="280" height="280"
-                alt="Вид на загородное шоссе.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/user-photo1-desktop.jpg 1x, img/user-photo1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/user-photo1-tablet.jpg 1x, img/user-photo1-tablet@2x.jpg 2x">
+                <img class="gallery-item__user-photo gallery-item__user-photo--main" src="img/user-photo1.jpg"
+                  srcset="img/user-photo1@2x.jpg" width="280" height="280" alt="Вид на загородное шоссе.">
+              </picture>
             </a>
             <div class="gallery-item__list">
               <h3 class="gallery-item__title">Неродные просторы</h3>
@@ -87,8 +97,14 @@
           </li>
           <li class="gallery__gallery-item gallery-item">
             <a class="gallery-item__link-photo" href="#">
-              <img class="gallery-item__user-photo" src="img/user-photo2.jpg" width="280" height="280"
-                alt="Иллюстрация местной растительности.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/user-photo2-desktop.jpg 1x, img/user-photo2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/user-photo2-tablet.jpg 1x, img/user-photo2-tablet@2x.jpg 2x">
+                <img class="gallery-item__user-photo" src="img/user-photo2.jpg" srcset="img/user-photo2@2x.jpg 2x"
+                  width="280" height="280" alt="Иллюстрация местной растительности.">
+              </picture>
             </a>
             <div class="gallery-item__list">
               <h3 class="gallery-item__title">Местная растительность</h3>
@@ -111,8 +127,14 @@
           </li>
           <li class="gallery__gallery-item gallery-item">
             <a class="gallery-item__link-photo" href="#">
-              <img class="gallery-item__user-photo" src="img/user-photo3.jpg" width="280" height="280"
-                alt="Вид на горный серпантин.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/user-photo3-desktop.jpg 1x, img/user-photo3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/user-photo3-tablet.jpg 1x, img/user-photo3-tablet@2x.jpg 2x">
+                <img class="gallery-item__user-photo" src="img/user-photo3.jpg" srcset="img/user-photo3@2x.jpg 2x"
+                  width="280" height="280" alt="Вид на горный серпантин.">
+              </picture>
             </a>
             <div class="gallery-item__list">
               <h3 class="gallery-item__title">Дорога на север</h3>
@@ -135,8 +157,14 @@
           </li>
           <li class="gallery__gallery-item gallery-item">
             <a class="gallery-item__link-photo" href="#">
-              <img class="gallery-item__user-photo" src="img/user-photo4.jpg" width="280" height="280"
-                alt="Вид на Мост Дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/user-photo4-desktop.jpg 1x, img/user-photo4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/user-photo4-tablet.jpg 1x, img/user-photo4-tablet@2x.jpg 2x">
+                <img class="gallery-item__user-photo" src="img/user-photo4.jpg" srcset="img/user-photo4@2x.jpg 2x"
+                  width="280" height="280" alt="Вид на Мост Дьявола.">
+              </picture>
             </a>
             <div class="gallery-item__list">
               <h3 class="gallery-item__title">Мост дьявола</h3>
@@ -169,8 +197,14 @@
             подорожали в очередной раз!</p>
         </header>
         <a class="video-presentation__link video-preview" href="#">
-          <img class="video-preview__preview-image" src="img/video-preview.jpg" width="280" height="177"
-            alt="Превью видеопрезентации.">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+            <img class="video-preview__preview-image" src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg 2x"
+              width="280" height="177" alt="Превью видеопрезентации.">
+          </picture>
           <div class="video-preview__play-icon">
             <svg width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m48 27.02-48 27v-54l48 27Z" fill="#fff" fill-opacity=".7" /></svg>
