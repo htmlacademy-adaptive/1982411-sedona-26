@@ -66,108 +66,119 @@
         </header>
         <form class="reviews-form__form form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="reviews-form__user-info-wrapper">
-            <fieldset class="form__user-details-set user-details-set form__fieldset">
-              <legend class="user-details-set__legend heading-form">Представьтесь:</legend>
-              <label class="user-details-set__label" for="name">
-                Имя*:
-              </label>
-              <input class="user-details-set__field" type="text" name="name" value="Пётр" id="name" required>
-              <label class="user-details-set__label" for="surname">
-                Фамилия*:
-              </label>
-              <input class="user-details-set__field" type="text" name="surname" value="Пустота" id="surname" required>
-              <label class="user-details-set__label" for="middle-name">
-                Отчество:
-              </label>
-              <input class="user-details-set__field" type="text" name="middle-name" value="Викторович" id="middle-name">
-            </fieldset>
-            <fieldset class="form__user-contacts-set user-contacts-set form__fieldset">
-              <legend class="user-contacts-set__legend heading-form">Контактная информация:</legend>
-              <label class="user-contacts-set__label" for="phone-number">
-                Контактный телефон*:
-              </label>
-              <div class="user-contacts-set__input-wrapper">
-                <input class="user-contacts-set__field" type="tel" name="phone-number" placeholder="Введите телефон"
-                  id="phone-number" required>
-                <span class="user-contacts-set__field-icon user-contacts-set__field-icon--phone"></span>
+            <fieldset class="form__user-details-set user-details-set">
+              <div class="form__fieldset user-details-set__wrapper">
+                <legend class="user-details-set__legend heading-form">Представьтесь:</legend>
+                <label class="user-details-set__label" for="name">
+                  Имя*:
+                </label>
+                <input class="user-details-set__field" type="text" name="name" value="Пётр" id="name" required>
+                <label class="user-details-set__label" for="surname">
+                  Фамилия*:
+                </label>
+                <input class="user-details-set__field" type="text" name="surname" value="Пустота" id="surname" required>
+                <label class="user-details-set__label" for="middle-name">
+                  Отчество:
+                </label>
+                <input class="user-details-set__field" type="text" name="middle-name" value="Викторович"
+                  id="middle-name">
               </div>
-              <label class="user-contacts-set__label" for="email">
-                Электронная почта*:
-              </label>
-              <div class="user-contacts-set__input-wrapper">
-                <input class="user-contacts-set__field" type="email" name="email" placeholder="Введите e-mail"
-                  id="email" required>
-                <span class="user-contacts-set__field-icon user-contacts-set__field-icon--email"></span>
+            </fieldset>
+            <fieldset class="form__user-contacts-set user-contacts-set">
+              <div class="form__fieldset user-details-set__wrapper">
+                <legend class="user-contacts-set__legend heading-form">Контактная информация:</legend>
+                <label class="user-contacts-set__label" for="phone-number">
+                  Контактный телефон*:
+                </label>
+                <div class="user-contacts-set__input-wrapper">
+                  <input class="user-contacts-set__field" type="tel" name="phone-number" placeholder="Введите телефон"
+                    id="phone-number" required>
+                  <span class="user-contacts-set__field-icon user-contacts-set__field-icon--phone"></span>
+                </div>
+                <label class="user-contacts-set__label" for="email">
+                  Электронная почта*:
+                </label>
+                <div class="user-contacts-set__input-wrapper">
+                  <input class="user-contacts-set__field" type="email" name="email" placeholder="Введите e-mail"
+                    id="email" required>
+                  <span class="user-contacts-set__field-icon user-contacts-set__field-icon--email"></span>
+                </div>
               </div>
             </fieldset>
           </div>
-          <fieldset class="form__user-impressions user-impressions form__fieldset">
-            <legend class="user-impressions__legend heading-form">Ваше общее впечатление:</legend>
-            <ul class="user-impressions__list">
-              <li class="user-impressions__item">
-                <label class="user-impressions__label">
-                  <input class="visually-hidden user-impressions__input" type="radio" name="user-impression"
-                    value="positive" checked>
-                  <span class="user-impressions__input-mark"></span>
-                  Скорее положительное
-                </label>
-              </li>
-              <li class="user-impressions__item">
-                <label class="user-impressions__label">
-                  <input class="visually-hidden user-impressions__input" type="radio" name="user-impression"
-                    value="negative">
-                  <span class="user-impressions__input-mark"></span>
-                  Скорее отрицательное
-                </label>
-              </li>
-              <li class="user-impressions__item">
-                <label class="user-impressions__label">
-                  <input class="visually-hidden user-impressions__input" type="radio" name="user-impression"
-                    value="difficult">
-                  <span class="user-impressions__input-mark"></span>
-                  Затрудняюсь ответить
-                </label>
-              </li>
-            </ul>
+          <fieldset class="form__user-impressions user-impressions">
+            <div class="form__fieldset">
+              <legend class="user-impressions__legend heading-form">Ваше общее впечатление:</legend>
+              <ul class="user-impressions__list">
+                <li class="user-impressions__item">
+                  <label class="user-impressions__label">
+                    <input class="visually-hidden user-impressions__input" type="radio" name="user-impression"
+                      value="positive" checked>
+                    <span class="user-impressions__input-mark"></span>
+                    Скорее положительное
+                  </label>
+                </li>
+                <li class="user-impressions__item">
+                  <label class="user-impressions__label">
+                    <input class="visually-hidden user-impressions__input" type="radio" name="user-impression"
+                      value="negative">
+                    <span class="user-impressions__input-mark"></span>
+                    Скорее отрицательное
+                  </label>
+                </li>
+                <li class="user-impressions__item">
+                  <label class="user-impressions__label">
+                    <input class="visually-hidden user-impressions__input" type="radio" name="user-impression"
+                      value="difficult">
+                    <span class="user-impressions__input-mark"></span>
+                    Затрудняюсь ответить
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="form__visited visited form__fieldset">
-            <legend class="visited__legend heading-form">Посещенные достопримечательности:</legend>
-            <ul class="visited__list">
-              <li class="visited__item">
-                <label class="visited__label">
-                  <input class="visually-hidden visited__input" type="checkbox" name="devils-bridge" checked>
-                  <span class="visited__input-mark"></span>
-                  Мост Дьявола
-                </label>
-              </li>
-              <li class="visited__item">
-                <label class="visited__label">
-                  <input class="visually-hidden visited__input" type="checkbox" name="bell-mountain" checked>
-                  <span class="visited__input-mark"></span>
-                  Гора-Колокол
-                </label>
-              </li>
-              <li class="visited__item">
-                <label class="visited__label">
-                  <input class="visually-hidden visited__input" type="checkbox" name="slide-park" checked>
-                  <span class="visited__input-mark"></span>
-                  Слайд-парк
-                </label>
-              </li>
-              <li class="visited__item">
-                <label class="visited__label">
-                  <input class="visually-hidden visited__input" type="checkbox" name="red-rocks">
-                  <span class="visited__input-mark"></span>
-                  Красные скалы
-                </label>
-              </li>
-            </ul>
+          <fieldset class="form__visited visited">
+            <div class="form__fieldset">
+              <legend class="visited__legend heading-form">Посещенные достопримечательности:</legend>
+              <ul class="visited__list">
+                <li class="visited__item">
+                  <label class="visited__label">
+                    <input class="visually-hidden visited__input" type="checkbox" name="devils-bridge" checked>
+                    <span class="visited__input-mark"></span>
+                    Мост Дьявола
+                  </label>
+                </li>
+                <li class="visited__item">
+                  <label class="visited__label">
+                    <input class="visually-hidden visited__input" type="checkbox" name="bell-mountain" checked>
+                    <span class="visited__input-mark"></span>
+                    Гора-Колокол
+                  </label>
+                </li>
+                <li class="visited__item">
+                  <label class="visited__label">
+                    <input class="visually-hidden visited__input" type="checkbox" name="slide-park" checked>
+                    <span class="visited__input-mark"></span>
+                    Слайд-парк
+                  </label>
+                </li>
+                <li class="visited__item">
+                  <label class="visited__label">
+                    <input class="visually-hidden visited__input" type="checkbox" name="red-rocks">
+                    <span class="visited__input-mark"></span>
+                    Красные скалы
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="form__review-field review-field form__fieldset">
-            <legend class="review-field__legend heading-form">Опишите свои эмоции:</legend>
-            <label class="visually-hidden" for="review-field">Отзыв</label>
-            <textarea class="review-field__textarea" name="review-field" id="review-field"
-              placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="form__review-field review-field">
+            <div class="form__fieldset">
+              <legend class="review-field__legend heading-form">Опишите свои эмоции:</legend>
+              <label class="visually-hidden" for="review-field">Отзыв</label>
+              <textarea class="review-field__textarea" name="review-field" id="review-field"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
           </fieldset>
           <div class="form__submit-review-wrapper">
             <button class="form__submit-review-button button" type="submit">

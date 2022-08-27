@@ -13,8 +13,12 @@
 }
 
 .user-impressions__legend {
-  padding-top: 24px;
+  margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .user-impressions__list {
@@ -51,6 +55,7 @@
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 26px;
+  cursor: pointer;
 }
 
 .user-impressions__input[type="radio"]:checked + .user-impressions__input-mark::before {
