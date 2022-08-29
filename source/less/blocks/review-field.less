@@ -3,8 +3,12 @@
   padding: 24px 0 56px 0;
   border: none;
 
+  @media (min-width: @tablet-width) {
+    padding: 42px 0 48px 0;
+  }
+
   @media (min-width: @desktop-width) {
-    padding: 54px 100px 48px 100px;
+    padding: 56px 0 48px 0;
   }
 }
 
@@ -13,14 +17,15 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 28px;
+    align-self: center;
+    margin: 0;
   }
 }
 
 .review-field__textarea {
   width: 100%;
   min-height: 150px;
-  margin: 0;
+  margin: 0 auto;
   padding: 16px;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
@@ -35,5 +40,11 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 768px;
+    margin: 0 auto;
   }
 }

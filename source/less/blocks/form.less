@@ -30,6 +30,27 @@
   }
 }
 
+.form__fieldset-divider {
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
+}
+
+.form__fieldset-divider-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+}
+
 
 .form__submit-review-button {
   padding: 19px 34px 14px 32px;

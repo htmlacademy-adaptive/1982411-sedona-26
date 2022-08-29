@@ -1,14 +1,14 @@
 .visited {
   margin: 0;
-  padding: 24px 0 8px 0;
+  padding: 24px 0 0 0;
   border: none;
 
   @media (min-width: @tablet-width) {
-    padding: 24px 84px 8px 84px;
+    padding-top: 48px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 24px 44px 8px 44px;
+    padding-top: 56px;
   }
 }
 
@@ -17,12 +17,8 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 28px;
-    padding: 24px 47px 0 47px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 24px 327px 0 327px;
+    align-self: center;
+    margin: 0;
   }
 }
 
@@ -34,10 +30,12 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 84px 0 84px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 45px 0 45px;
   }
 }
 
