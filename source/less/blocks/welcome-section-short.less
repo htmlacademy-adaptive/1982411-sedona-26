@@ -42,30 +42,36 @@
   @media (min-width: @desktop-width) {
     padding: 101px 0 102px 0;
   }
-}
 
-.welcome-section-short__wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 320px;
-  height: 57px;
-  background-image: url("../../img/welcome-divider.svg");
-  background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 320px;
+    height: 57px;
+    background-image: url("../../img/welcome-divider.svg");
+    background-repeat: no-repeat;
 
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    background-image: url("../../img/welcome-divider-tablet.svg");
-  }
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      background-image: url("../../img/welcome-divider-tablet.svg");
+    }
 
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    background-image: url("../../img/welcome-divider-desktop.svg");
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+      background-image: url("../../img/welcome-divider-desktop.svg");
+    }
   }
 }
 
 .welcome-section-short__image {
   margin: 0 auto;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: auto;
+  }
 }
+

@@ -1,20 +1,25 @@
 .user-impressions {
   margin: 0;
-  padding: 24px 0 8px 0;
+  padding: 24px 0 0 0;
   border: none;
 
   @media (min-width: @tablet-width) {
-    padding: 24px 36px 8px 36px;
+    padding-top: 48px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 24px 53px 8px 53px;
+    padding-top: 56px;
   }
 }
 
 .user-impressions__legend {
-  padding-top: 24px;
+  margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    margin: 0;
+  }
 }
 
 .user-impressions__list {
@@ -25,10 +30,12 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 36px 0 36px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 53px 0 53px;
   }
 }
 
@@ -51,6 +58,7 @@
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 26px;
+  cursor: pointer;
 }
 
 .user-impressions__input[type="radio"]:checked + .user-impressions__input-mark::before {
