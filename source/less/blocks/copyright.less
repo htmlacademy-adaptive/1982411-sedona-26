@@ -15,7 +15,7 @@
   position: relative;
   width: 30px;
   height: 35px;
-  padding: 20px 33px 20px 0;
+  padding: 20px 33px 20px 7px;
   box-sizing: border-box;
   color: #000000;
   text-decoration: none;
@@ -27,6 +27,10 @@
   &:active {
     color: #b3b3b3;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 43px 20px 0;
+  }
 }
 
 .copyright__logo {
@@ -35,4 +39,8 @@
   right: -10px;
   bottom: 0;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
+  }
 }

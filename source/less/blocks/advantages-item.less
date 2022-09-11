@@ -1,8 +1,12 @@
 .advantages-item__advantage-order::before {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   display: block;
   counter-increment: advantage;
   content: "— №"counter(advantage) "—";
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .advantages-item--divided {
@@ -25,7 +29,7 @@
 
 
 .advantages-item__wrapper {
-  padding: 39px 20px 35px 20px;
+  padding: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -41,8 +45,19 @@
 }
 
 .advantages-item__wrapper--reverse {
+  padding-bottom: 14px;
+
   @media (min-width: @tablet-width) {
     order: 2;
+    padding-bottom: 0;
+  }
+}
+
+.advantages-item__wrapper--modified {
+  padding: 10px 20px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px 0 20px;
   }
 }
 
@@ -51,6 +66,7 @@
   margin: 0 0 11px 0;
 
   @media (min-width: @tablet-width) {
+    padding-top: 10px;
     max-width: 150px;
     margin: 0 auto 11px auto;
   }
@@ -105,7 +121,7 @@
 }
 
 .advantages-item__advantages-sub-list {
-  padding: 23px 20px 52px 20px;
+  padding: 0 20px 52px 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 31px 0 36px;
