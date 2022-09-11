@@ -73,7 +73,7 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    padding: 14px 20px 0 20px;
+    padding: 16px 20px 0 20px;
     background-color: #f2f2f2;
   }
 
@@ -91,6 +91,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / -1;
     margin-left: auto;
+    padding-bottom: 12px;
   }
 }
 
@@ -110,6 +111,10 @@
 .gallery-item__name--icon {
   margin-right: 10px;
   color: fade(#000000, 30%);
+
+  @media (min-width: @tablet-width) {
+    margin-right: 5px;
+  }
 
   @media (min-width: @desktop-width) {
     color: @white;
