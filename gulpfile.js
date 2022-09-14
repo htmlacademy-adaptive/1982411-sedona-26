@@ -9,7 +9,9 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import {deleteAsync} from 'del';
+import {
+  deleteAsync
+} from 'del';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -66,7 +68,7 @@ const copyImages = () => {
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.{png,jpg}'])
     .pipe(squoosh({
       webp: {}
     }))
@@ -96,7 +98,7 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
       'source/fonts/*.{woff2,woff}',
-      'source/*.ico',
+      'source/public/**/*',
     ], {
       base: 'source'
     })
@@ -162,14 +164,14 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
   gulp.series(
-  server,
-  watcher
+    server,
+    watcher
   ));
