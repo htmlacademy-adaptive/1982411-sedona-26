@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -68,7 +68,7 @@
           <div class="reviews-form__user-info-wrapper">
             <fieldset class="form__user-details-set user-details-set">
               <div class="form__fieldset user-details-set__wrapper">
-                <legend class="user-details-set__legend heading-form">Представьтесь:</legend>
+                <h3 class="user-details-set__legend heading-form">Представьтесь:</h3>
                 <label class="user-details-set__label" for="name">
                   Имя*:
                 </label>
@@ -86,7 +86,7 @@
             </fieldset>
             <fieldset class="form__user-contacts-set user-contacts-set">
               <div class="form__fieldset user-details-set__wrapper">
-                <legend class="user-contacts-set__legend heading-form">Контактная информация:</legend>
+                <h3 class="user-contacts-set__legend heading-form">Контактная информация:</h3>
                 <label class="user-contacts-set__label" for="phone-number">
                   Контактный телефон*:
                 </label>
@@ -110,7 +110,7 @@
             <div class="form__fieldset">
               <div class="form__fieldset-divider-wrapper">
                 <div class="form__fieldset-divider"></div>
-                <legend class="user-impressions__legend heading-form">Ваше общее впечатление:</legend>
+                <h3 class="user-impressions__legend heading-form">Ваше общее впечатление:</h3>
                 <div class="form__fieldset-divider"></div>
               </div>
               <ul class="user-impressions__list">
@@ -145,7 +145,7 @@
             <div class="form__fieldset">
               <div class="form__fieldset-divider-wrapper">
                 <div class="form__fieldset-divider"></div>
-                <legend class="visited__legend heading-form">Посещенные достопримечательности:</legend>
+                <h3 class="visited__legend heading-form">Посещенные достопримечательности:</h3>
                 <div class="form__fieldset-divider"></div>
               </div>
               <ul class="visited__list">
@@ -184,7 +184,7 @@
             <div class="form__fieldset">
               <div class="form__fieldset-divider-wrapper">
                 <div class="form__fieldset-divider"></div>
-                <legend class="review-field__legend heading-form">Опишите свои эмоции:</legend>
+                <h3 class="review-field__legend heading-form">Опишите свои эмоции:</h3>
                 <div class="form__fieldset-divider"></div>
               </div>
               <label class="visually-hidden" for="review-field">Отзыв</label>
@@ -211,21 +211,21 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg class="social__icon" width="24" height="14" fill="none">
-                <use xlink:href="img/sprite.svg#vkontakte-icon"></use>
+              <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <svg class="social__icon" width="22" height="18" fill="none">
+              <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none">
                 <use xlink:href="img/sprite.svg#telegram-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="social__icon" width="20" height="14" fill="none">
+              <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none">
                 <use xlink:href="img/sprite.svg#youtube-icon"></use>
               </svg>
             </a>
@@ -236,15 +236,15 @@
         <div class="copyright__wrapper">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">Разработано</span>
-            <svg class="copyright__logo" width="27" height="35" fill="currentColor">
-              <use xlink:href="img/sprite.svg#academy-icon"></use>
+            <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="currentColor">
+              <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-  <div class="modal-container modal-container-failure modal-container--close">
+  <div class="modal-container modal-container-failure-close">
     <div class="modal-container-failure__wrapper">
       <p class="modal-container-failure__notice">Что-то пошло не так!</p>
       <p class="modal-container-failure__notice-explanation">Проверьте поля, выделенные красным, скорее всего вы забыли
@@ -253,7 +253,7 @@
       <button class="modal-container-failure__close-button button">Oк</button>
     </div>
   </div>
-  <div class="modal-container modal-container-success modal-container--close">
+  <div class="modal-container modal-container-success-close">
     <div class="modal-container-success__wrapper">
       <div class="modal-container-success__notice-area">
         <p class="modal-container-success__notice">Ваш отзыв отправлен!</p>

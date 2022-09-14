@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 24px 64px 15px 0;
+    padding: 24px 50px 15px 0;
   }
 
   &::after {
@@ -17,7 +17,7 @@
       content: "";
       position: absolute;
       top: 24px;
-      right: 0;
+      right: -14px;
       width: 1px;
       height: 338px;
       background-color: #dbdbdb;
@@ -31,11 +31,19 @@
 }
 
 .user-details-set__legend {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 28px;
+    position: relative;
+    left: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+    position: relative;
+    left: 29px;
   }
 }
 
