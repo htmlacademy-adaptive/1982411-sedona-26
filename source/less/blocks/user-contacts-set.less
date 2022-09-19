@@ -59,10 +59,12 @@
   }
 
   &:focus,
+  &:focus-visible,
   &:active {
     background-color: @white;
     box-shadow: inset 4px 4px #e5e5e5,
       inset -4px -4px #e5e5e5;
+    outline: none;
   }
 
   &::placeholder {
