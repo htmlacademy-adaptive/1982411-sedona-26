@@ -1,6 +1,6 @@
 .user-impressions {
   margin: 0;
-  padding: 24px 0 0 0;
+  padding: 25px 0 0 0;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -29,7 +29,7 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 280px;
     padding: 0 36px 0 36px;
   }
 
@@ -52,6 +52,19 @@
 
   @media (min-width: @desktop-width) {
     margin: 16px 0 16px 0;
+    padding: 11px 0 10px 62px;
+  }
+}
+
+.user-impressions__label--modified {
+  @media (min-width: @desktop-width) {
+    left: 5px;
+  }
+}
+
+.user-impressions__label--modified-right {
+  @media (min-width: @desktop-width) {
+    left: 9px;
   }
 }
 

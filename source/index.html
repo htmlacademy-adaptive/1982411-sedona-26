@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -91,24 +93,24 @@
                 <p class="advantages-sub-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
               <div class="advantages-sub-list__sub-list-item advantages-sub-list__sub-list-item--food">
-                <h3 class="advantages-sub-list__title heading">Еда</h3>
-                <p class="advantages-sub-list__description advantages-sub-list__description--tablet">Всегда заказывайте
+                <h3 class="advantages-sub-list__title advantages-sub-list__title--food heading">Еда</h3>
+                <p class="advantages-sub-list__description advantages-sub-list__description--food">Всегда заказывайте
                   фирменный бургер, вы не разочаруетесь!
                 </p>
               </div>
               <div class="advantages-sub-list__sub-list-item advantages-sub-list__sub-list-item--souvenirs">
-                <h3 class="advantages-sub-list__title heading">Сувениры</h3>
-                <p class="advantages-sub-list__description advantages-sub-list__description--desktop">Не только
-                  китайского, <br class="advantages-sub-list__br"> но и местного
+                <h3 class="advantages-sub-list__title advantages-sub-list__title--souvenirs heading">Сувениры</h3>
+                <p class="advantages-sub-list__description advantages-sub-list__description--souvenirs">Не только
+                  китайского,&nbsp; <br class="advantages-sub-list__br"> но и местного
                   производства! &nbsp;</p>
               </div>
             </div>
           </li>
           <li class="advantages__advantages-item advantages-item advantages-item--blue">
             <div class="advantages-item__wrapper advantages-item__wrapper--reverse">
-              <h3 class="advantages-item__title heading heading--white">Там есть Мост Дьявола</h3>
+              <h3 class="advantages-item__title advantages-item__title--bridge heading heading--white">Там есть Мост Дьявола</h3>
               <p
-                class="advantages-item__description advantages-item__description--desktop advantages-item__advantage-order">
+                class="advantages-item__description advantages-item__description--bridge advantages-item__advantage-order">
                 Да, по нему можно пройти! Если вы
                 осмелитесь, конечно</p>
             </div>
@@ -123,16 +125,15 @@
           </li>
           <li class="advantages__advantages-item advantages-item advantages-item--divided">
             <div class="advantages-item__wrapper advantages-item__wrapper--modified">
-              <h3 class="advantages-item__title heading">Небольшая площадь</h3>
-              <p
-                class="advantages-item__description advantages-item__description--modified advantages-item__advantage-order">
-                Все интересные места находятся
-                очень близко &nbsp;</p>
+              <h3 class="advantages-item__title advantages-item__title--special heading">Небольшая площадь</h3>
+              <p class="advantages-item__description advantages-item__description--modified advantages-item__advantage-order">
+                Все интересные места находятся очень близко
+              </p>
             </div>
           </li>
           <li class="advantages__advantages-item advantages-item advantages-item--divided">
             <div class="advantages-item__wrapper advantages-item__wrapper--modified">
-              <h3 class="advantages-item__title heading">Красивая дорога</h3>
+              <h3 class="advantages-item__title advantages-item__title--special heading">Красивая дорога</h3>
               <p
                 class="advantages-item__description advantages-item__description--modified advantages-item__description--modified-width advantages-item__advantage-order">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -141,7 +142,7 @@
           </li>
           <li class="advantages__advantages-item advantages-item advantages-item--divided">
             <div class="advantages-item__wrapper advantages-item__wrapper--modified">
-              <h3 class="advantages-item__title heading">Мало туристов</h3>
+              <h3 class="advantages-item__title advantages-item__title--special heading">Мало туристов</h3>
               <p
                 class="advantages-item__description advantages-item__description--modified advantages-item__advantage-order">
                 Большинство едет в гранд каньон и толпится там
@@ -156,7 +157,7 @@
         <header class="search__header">
           <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
           <p class="search__slogan">Заинтересовались?</p>
-          <p class="search__intro">Укажите предполагаемые даты поездки, <br class="search___tablet-br"> и мы покажем вам
+          <p class="search__intro">Укажите предполагаемые даты поездки, <br class="search___tablet-br">&nbsp; и мы покажем вам
             лучшие предложения гостиниц в
             Седоне</p>
         </header>
@@ -165,16 +166,10 @@
         </a>
       </div>
     </section>
-    <aside class="map-section">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-        <img class="map-section__map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg" alt="Седона на карте."
-          width="320" height="350">
-      </picture>
-      <div class="map-section__marker">
-      </div>
-    </aside>
+    <iframe class="map-section"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1936765.1465541346!2d-113.13701226536935!3d34.85361270562817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1663149813716!5m2!1sru!2sru"
+      width="320" height="350" allowfullscreen title="Седона на карте.">
+    </iframe>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
