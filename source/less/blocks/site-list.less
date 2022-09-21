@@ -82,8 +82,11 @@
       color: @blue-basic;
     }
 
+    &:focus,
+    &:focus-visible,
     &:active {
       color: fade(#000000, 30%);
+      outline: none;
     }
   }
 }
@@ -94,6 +97,8 @@
   }
 
   &:hover,
+  &:focus,
+  &:focus-visible,
   &:active {
     color: #766357;
   }
